@@ -3,8 +3,6 @@
 
 <p align="center">
   <a href="#recomendações">Recomendações</a>
-  •
-  <a href="#exemplo">Exemplo</a>
 </p>
 
 ## Recomendações
@@ -15,11 +13,6 @@
     <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier</a></li>
     <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a></li>
 </ul>
-
-## Exemplo
-
-<em>Default port is set to 5500 for this example</em>
-<iframe src="http://localhost:5500" height="600" width="800" title="Iframe Example"></iframe>
 
 <br>
 <p>Se nao estiver-res a conseguir podes sempre entrar no discord do curso e pedir ajuda.</p>
