@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+	  "esbenp.prettier-vscode",
+	  "ritwickdey.LiveServer"
+	],
+	"settings": {
+	  "editor.defaultFormatter": "esbenp.prettier-vscode",
+	  "editor.formatOnSave": false,
+	  "liveServer.settings.donotShowInfoMsg": true
+	}
+  }
