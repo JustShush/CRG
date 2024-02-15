@@ -32,7 +32,7 @@
 <div align="center">  <a href="https://get.webgl.org/" alt="WebGL Website"><img src="./img/WebGL_Logo.png" height="100"></a></div>
 
 ## Exercicios
-<p><em>Todos os exercicios feitos nesta cadeira vou estar neste repositório.</em>
+<p><em>Todos os exercicios feitos nesta cadeira vão estar neste repositório.</em>
 <p>Como é que isto vai funcionar.<br>Básicamente eu vou criar varias branches divididas por aulas ou temas.</p>
 <p> - Para ver todas as branches basta clicar no retângulo a esquerda que diz <em>main</em> e escolher a branch que procura.</p>
 <br>
@@ -45,6 +45,6 @@
 <p>- Por fim basta baixar a branch clicando no botão verde ou executando <code>git clone -b "branchname" git@github.com:JustShush/CRG.git</code> </p>
 <div align="center"> <a href="https://github.com/JustShush/CRG/archive/refs/heads/main.zip" alt="Download Project"><img src="./img/download.png" height="400"></a></div>
 <br>
-<p>Se nao estiver-res a conseguir podes sempre entrar no discord do curso e pedir ajuda.</p>
+<p>Se nao estiveres a conseguir podes sempre entrar no discord do curso e pedir ajuda.</p>
 
 [![Discord](https://discord.com/api/guilds/1021887125219704843/widget.png?style=banner3)](https://discord.gg/5324s48sVn)
