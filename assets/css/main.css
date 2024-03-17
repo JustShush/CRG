@@ -105,6 +105,11 @@ a.left:hover:before {
 	width: 100%;
 }
 
+.footer-l .left {
+	text-decoration: none;
+	color: var(--link);
+}
+
 .footer-r .left {
 	text-decoration: none;
 	color: var(--link);
