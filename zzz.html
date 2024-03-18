@@ -1,87 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Company</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #666;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 10px;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        .property {
-            background-color: #fff;
-            padding: 20px;
-            margin-right: 20px;
-            border-radius: 5px;
-            display: inline-block;
-            width: 45%; /* Adjust the width as needed */
-            vertical-align: top;
-            box-sizing: border-box;
-        }
-        .property:last-child {
-            margin-right: 0;
-        }
-        .property img {
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Elite Homes</title>
+	<style>
+		.typing-container {
+			text-align: center;
+		}
+
+		#title {
+			font-family: Arial, sans-serif;
+			font-size: 36px;
+			color: #333;
+			margin: 50px 0;
+			border-right: 2px solid #333;
+			white-space: nowrap;
+			overflow: hidden;
+			animation: typing 3s steps(30) forwards;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+	</style>
 </head>
+
 <body>
-    <header>
-        <h1>Real Estate Company</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Properties</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <h2>Featured Properties</h2>
-        <div class="property" onclick="location.href='property1.html';" style="cursor:pointer;">
-            <h3>Property 1</h3>
-            <img src="property1.jpg" alt="Property 1">
-            <p>Description of Property 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
-            <p>Price: $XXX,XXX</p>
-            <p>Location: City, State</p>
-        </div>
-        <div class="property" onclick="location.href='property2.html';" style="cursor:pointer;">
-            <h3>Property 2</h3>
-            <img src="property2.jpg" alt="Property 2">
-            <p>Description of Property 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex nec ultricies. Donec mattis egestas nisi non pretium.</p>
-            <p>Price: $XXX,XXX</p>
-            <p>Location: City, State</p>
-        </div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Real Estate Company. All rights reserved.</p>
-    </footer>
+	<div class="typing-container">
+		<h1 id="title"></h1>
+	</div>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const originalTitle = document.title;
+			let typedTitle = "";
+			let index = 0;
+			let reverse = false;
+			let pause = true;
+
+			document.title = "";
+
+			function writeTitle() {
+				if (!reverse && index < originalTitle.length) {
+					const char = originalTitle.charAt(index);
+					typedTitle += char;
+					document.title = typedTitle;
+					index++;
+				} else if (pause && !reverse) {
+					setTimeout(() => {
+						pause = false;
+						reverse = true;
+					}, 600);
+				} else if (index > 0) {
+					let char = null;
+					if (index - 1 < originalTitle.length)
+						char = " "
+					else char = originalTitle.charAt(index - 1);
+
+					typedTitle = typedTitle.substring(0, typedTitle.length - 1);
+					// If the last character was a space just add a " " space
+					if (char === " ") document.title = typedTitle + " ";
+					else document.title = typedTitle;
+					index--;
+					reverse = true;
+				} else {
+					reverse = false;
+				}
+
+				setTimeout(writeTitle, 250);
+			}
+
+			writeTitle();
+		});
+
+	</script>
 </body>
+
 </html>

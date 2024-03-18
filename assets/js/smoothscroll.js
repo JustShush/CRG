@@ -1,5 +1,5 @@
 $(function () {
-	// This will select everything with the class smoothScroll
+	// Selects everything with the class smoothScroll
 	// This should prevent problems with carousel, scrollspy, etc...
 	$('.smoothScroll').click(function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
