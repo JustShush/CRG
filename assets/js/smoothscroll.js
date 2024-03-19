@@ -8,7 +8,7 @@ $(function () {
 			if (target.length) {
 				$('html,body').animate({
 					scrollTop: target.offset().top
-				}, 1000); // The number here represents the speed of the scroll in milliseconds
+				}, 1000); // The speed of the scroll in ms
 				return false;
 			}
 		}
