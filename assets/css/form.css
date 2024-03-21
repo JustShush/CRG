@@ -9,12 +9,15 @@ body {
 	overflow: hidden;
 	position: relative;
 }
+
+/* Background slideshow */
 .slideshow-container {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	z-index: -1;
 }
+
 .slideshow-container img {
 	width: 100%;
 	height: 100%;
@@ -22,11 +25,13 @@ body {
 	position: absolute;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
-	filter: blur(3px); /* Adding blur effect */
+	filter: blur(3px); /* blur effect */
 }
+
 .slideshow-container img.active {
 	opacity: 1;
 }
+
 .login-container {
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 8px;
@@ -37,10 +42,13 @@ body {
 	position: relative;
 	z-index: 1;
 }
+
 h2 {
 	margin-bottom: 30px;
 	color: #333333;
 }
+
+/* Form */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -51,6 +59,7 @@ input[type="password"] {
 	border-radius: 5px;
 	box-sizing: border-box;
 }
+
 input[type="submit"] {
 	width: 100%;
 	padding: 12px;
@@ -62,19 +71,24 @@ input[type="submit"] {
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
+
 input[type="submit"]:hover {
 	background-color: #2c436b; /* Darker Navy Blue */
 }
+
 .logo {
 	margin-bottom: 10px;
 }
+
 .forgot-password {
 	margin-top: 10px;
 }
+
 .forgot-password a {
 	color: #333333;
 	text-decoration: none;
 }
+
 .forgot-password a:hover {
 	text-decoration: underline;
 }

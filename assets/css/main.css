@@ -26,10 +26,6 @@
 	padding: 50px 0;
 }
 
-.footer-dark .item.text {
-	margin-bottom: 36px;
-}
-
 .footer-dark .item.social {
 	text-align: center;
 }
@@ -65,8 +61,6 @@ a:hover {
 a {
 	color: var(--main-color);
 }
-
-/* accordion */
 
 * {
 	box-sizing: border-box;
